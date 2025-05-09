@@ -27,4 +27,4 @@ reward = r_curiosity + r_momentum + r_damage + r_score + r_baseline
 
 
 
-Complete program is available upon request.
+
