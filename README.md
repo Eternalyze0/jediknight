@@ -1,4 +1,4 @@
-# Playing Jedi Knight Jedi Academy with Deep Curious A3C Learning 🦋
+# 🦋 Playing Jedi Knight Jedi Academy with Deep Curious A3C Learning
 
 Six neural networks combine to form 🦋AI.
 
