@@ -14,4 +14,17 @@ https://www.youtube.com/watch?v=luNo1oCSoHw
 
 https://www.youtube.com/watch?v=9vLv0ws3hoU
 
+## Rewards
+
+```py
+r_curiosity = 100 * ( error_future_predictor - error_action_predictor )
+r_momentum = 0 * ( momentum )
+r_damage = ( damage_dealt - prev_damage_dealt ) + 0.5 * ( health - prev_health ) + 0.5 * ( shield - prev_shield )
+r_score = 100 * ( ( score - prev_score ) - 0.5 * ( deaths - prev_deaths ) )
+r_baseline = 1800
+reward = r_curiosity + r_momentum + r_damage + r_score + r_baseline
+```
+
+
+
 Complete program is available upon request.
