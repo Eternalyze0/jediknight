@@ -1,4 +1,4 @@
-# Playing Jedi Academy with Curious A3C
+# Playing Jedi Academy with Deep Curiosity
 
 Six neural networks combine to make the AI.
 
