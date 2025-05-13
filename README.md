@@ -39,7 +39,7 @@ Neural Networks:
 - Action Prediction
 - State Embedder
 - Snapshot Embedder
-- Screenshot Embedder
+- Image Embedder
 
 The forward, action prediction, and state embedder models (referred to as Phi in [1]) are part of the curiosity module from [1]. The snapshot and screenshot embedders are intended to alleviate the issue addressed in [5], i.e. the so-called couch-potato effect where a distracting TV with random noise in the environment derails the AI from truly exploring. All 5 of these are essentially trained through supervised learning. The agent is A3C but this can be swapped in with any other RL algorithm as one would an optimizer.
 
