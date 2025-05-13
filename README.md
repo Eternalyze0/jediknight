@@ -49,7 +49,7 @@ Aside from this being to my knowledge the first application of curiosity to a re
 
 ## Results
 
-In 36 minutes the AI explores half (about 10 areas or "rooms") of a big free-for-all map. During this time it picks up the same health pack twice (after it regenerates in a minute) and the same shield pack twice. 
+In 36 minutes the AI explores half (about 10 areas or "rooms") of a big free-for-all map meant for 32 players. During this time it picks up the same health pack twice (after it regenerates in a minute) and the same shield pack twice. 
 
 It wins 3-1, 1-0, 20-11 against Cultist, Jedi Trainer (after starting at a disadvantage) and Desann (the final boss of the game), all set to max Jedi Master level.
 
