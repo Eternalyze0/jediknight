@@ -45,7 +45,7 @@ i think ideally it self-balances somehow over time, ie if one of the intrinsic e
 i also had some wild ideas about recursive curiosity, where curiosity_n+1 acts on curiosity_n at higher timescales, but i don't know if they will have any practical benefit amidst all the noise that is rl
 another wild approach is only using rl initially to boostrap into an sl situation, since the forward model is trained by sl already
 
-**i think in general the key to making rl efficient is to delegate as much of it to sl as possible**
+_**i think in general the key to making rl efficient is to delegate as much of it to sl as possible**_
 
 so for example if there is a differentiable approximation of the environment like the forward model, then the whole rl process becomes differentiable
 
