@@ -26,6 +26,21 @@ r_baseline = 1800
 reward = r_curiosity + r_momentum + r_damage + r_score + r_baseline
 ```
 
+## Explanation
+
+It's mostly explained in the paper -- knight.pdf, but I will explain here in more practical words anyway. I use the A3C program from minimalRL [3] but I don't use the asynchronous part -- the agent learns everything online in realtime with one learner process and no test processes. I re-implement the intrinsic curiosity module from [1] and I use the AI<->game interface from [2]. The implementation is mostly game agnostic (or can easily be made so) however a colleague was kind enough to create a custom game client for me so that things like health and shield information could be recovered. Thus the final version of the AI is dual-input in that it uses raw pixels as well as raw game data. The only preprocessing exception is for the variables used in the reward structure above. Otherwise game data is simply all cast to float and piped into an embedding neural module. **We note that exploratory performance is maintained even if only raw pixels are used as input.** Furthermore we believe the raw game data has enough information to play the game alone as well, albeit it does not have map information. Most likely the most useful part of the raw game data are the coordinates and orientations of the so-called entities, which include player characters. In the program the raw game data is referred to as the snapshot. The game itself is now open source and is available here: https://github.com/JACoders/OpenJK. We note that actual saber collisions are computed from the game program.
+
+Neural Networks:
+
+- A3C
+- Forward Model
+- Action Prediction
+- State Embedder
+- Snapshot Embedder
+- Screenshot Embedder
+
+The forward, action prediction, and state embedder models (referred to as Phi in [1]) are part of the curiosity module from [1]. The snapshot and screenshot embedders are intended to alleviate the issue addressed in [5], i.e. the so-called couch-potato effect where a distracting TV with random noise in the environment derails the AI from truly exploring. All 5 of these are essentially trained through supervised learning. The agent is A3C but this can be swapped in with any other RL algorithm as one would an optimizer.
+
 ## My Discord Musings
 
 alpha — Yesterday at 23:49
@@ -54,7 +69,26 @@ alpha — 03:19
 and since the forward model is sl and since curiosity doesn't get stuck, you end up training a good forward model that doesn't miss any parts of the distribution, so initially all you're really doing is training an sl forward model, with a bit of rl, and then afterwards you can mostly train in the differentiable regime once the forward model is good enough
 hope im making sense here
 
-## Reference
+##  References
+
+We thank the authors of these references for their dedication as well as friends
+and coworkers who helped with interfacing with the game and editing the paper,
+[1] Deepak Pathak, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell.
+Curiosity-driven Exploration by Self-supervised Prediction. In ICML 2017.
+[2] Tim Pearce, Jun Zhu. Counter-Strike Deathmatch with Large-Scale Be-
+havioural Cloning, In proc. of IEEE Conference on Games (CoG), Beijing,
+China, 2022.
+[3] Seungeun Rho. A3C. 2019.
+[4] Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves,
+Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu. Asyn-
+chronous Methods for Deep Reinforcement Learning. arXiv, 2016.
+4
+[5] Yuri Burda, Harrison Edwards, Amos Storkey, Oleg Klimov. Exploration
+by Random Network Distillation. arXiv, 2018.
+[6] Richard Sutton, Andrew Barto. Reinforcement Learning: An Introduc-
+tion. 2018.
+
+## Refer To As
 
 Dmitri Tkatch. Playing Jedi Academy with Deep Curiosity. 2025.
 
