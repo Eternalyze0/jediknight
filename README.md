@@ -39,7 +39,9 @@ alpha — 03:10
 i think ideally it self-balances somehow over time, ie if one of the intrinsic errors is an order of magnitude higher than the other then the smaller one has its coefficient doubled
 i also had some wild ideas about recursive curiosity, where curiosity_n+1 acts on curiosity_n at higher timescales, but i don't know if they will have any practical benefit amidst all the noise that is rl
 another wild approach is only using rl initially to boostrap into an sl situation, since the forward model is trained by sl already
+
 **i think in general the key to making rl efficient is to delegate as much of it to sl as possible**
+
 so for example if there is a differentiable approximation of the environment like the forward model, then the whole rl process becomes differentiable
 alpha — 03:19
 and since the forward model is sl and since curiosity doesn't get stuck, you end up training a good forward model that doesn't miss any parts of the distribution, so initially all you're really doing is training an sl forward model, with a bit of rl, and then afterwards you can mostly train in the differentiable regime once the forward model is good enough
