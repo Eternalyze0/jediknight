@@ -41,6 +41,8 @@ Neural Networks:
 
 The forward, action prediction, and state embedder models (referred to as Phi in [1]) are part of the curiosity module from [1]. The snapshot and screenshot embedders are intended to alleviate the issue addressed in [5], i.e. the so-called couch-potato effect where a distracting TV with random noise in the environment derails the AI from truly exploring. All 5 of these are essentially trained through supervised learning. The agent is A3C but this can be swapped in with any other RL algorithm as one would an optimizer.
 
+Aside from this being to my knowledge the first application of curiosity to a realtime competitive 3D game, the other novelty comes from smoothing actions by rewarding negative action prediction error.
+
 ## My Discord Musings
 
 alpha — Yesterday at 23:49
