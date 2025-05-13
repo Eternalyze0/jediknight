@@ -26,6 +26,8 @@ r_baseline = 1800
 reward = r_curiosity + r_momentum + r_damage + r_score + r_baseline
 ```
 
+Note momentum was experimented with early on but was eventually ignored as using OCR to scrape the on-screen momentum indicator wasted too many agent time-steps.
+
 ## Explanation
 
 It's mostly explained in the paper -- knight.pdf, but I will explain here in more practical words anyway. I use the A3C program from minimalRL [3] but I don't use the asynchronous part -- the agent learns everything online in realtime with one learner process and no test processes. I re-implement the intrinsic curiosity module from [1] and I use the AI<->game interface from [2]. The implementation is mostly game agnostic (or can easily be made so) however a colleague was kind enough to create a custom game client for me so that things like health and shield information could be recovered. Thus the final version of the AI is dual-input in that it uses raw pixels as well as raw game data. 
