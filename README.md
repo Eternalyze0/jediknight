@@ -43,7 +43,7 @@ The forward, action prediction, and state embedder models (referred to as Phi in
 
 Aside from this being to my knowledge the first application of curiosity to a realtime competitive 3D game, the other novelty comes from smoothing actions by rewarding negative action prediction error.
 
-## My Discord Musings
+## My Discord Musings on Future Directions
 
 alpha — Yesterday at 23:49
 
