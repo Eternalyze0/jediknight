@@ -71,22 +71,19 @@ hope im making sense here
 
 ##  References
 
-We thank the authors of these references for their dedication as well as friends
-and coworkers who helped with interfacing with the game and editing the paper,
-[1] Deepak Pathak, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell.
-Curiosity-driven Exploration by Self-supervised Prediction. In ICML 2017.
-[2] Tim Pearce, Jun Zhu. Counter-Strike Deathmatch with Large-Scale Be-
-havioural Cloning, In proc. of IEEE Conference on Games (CoG), Beijing,
-China, 2022.
+We thank the authors of these references for their dedication as well as friends and coworkers who helped with interfacing with the game and editing the paper,
+
+[1] Deepak Pathak, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell. Curiosity-driven Exploration by Self-supervised Prediction. In ICML 2017.
+
+[2] Tim Pearce, Jun Zhu. Counter-Strike Deathmatch with Large-Scale Behavioural Cloning, In proc. of IEEE Conference on Games (CoG), Beijing, China, 2022.
+
 [3] Seungeun Rho. A3C. 2019.
-[4] Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves,
-Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu. Asyn-
-chronous Methods for Deep Reinforcement Learning. arXiv, 2016.
-4
-[5] Yuri Burda, Harrison Edwards, Amos Storkey, Oleg Klimov. Exploration
-by Random Network Distillation. arXiv, 2018.
-[6] Richard Sutton, Andrew Barto. Reinforcement Learning: An Introduc-
-tion. 2018.
+
+[4] Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu. Asynchronous Methods for Deep Reinforcement Learning. arXiv, 2016.
+
+[5] Yuri Burda, Harrison Edwards, Amos Storkey, Oleg Klimov. Exploration by Random Network Distillation. arXiv, 2018.
+
+[6] Richard Sutton, Andrew Barto. Reinforcement Learning: An Introduction. 2018.
 
 ## Refer To As
 
