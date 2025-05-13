@@ -45,5 +45,9 @@ alpha — 03:19
 and since the forward model is sl and since curiosity doesn't get stuck, you end up training a good forward model that doesn't miss any parts of the distribution, so initially all you're really doing is training an sl forward model, with a bit of rl, and then afterwards you can mostly train in the differentiable regime once the forward model is good enough
 hope im making sense here
 
+## Reference
+
+Dmitri Tkatch. Playing Jedi Academy with Deep Curiosity. 2025.
+
 
 
