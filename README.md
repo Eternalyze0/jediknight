@@ -103,7 +103,7 @@ We thank the authors of these references for their dedication as well as friends
 
 ## Refer To As
 
-Dmitri Tkatch. Playing Jedi Academy with Deep Curiosity. 2025.
+Dmitri Tkatch. Playing Jedi Academy with Deep Curiosity. GitHub, 2025.
 
 
 
