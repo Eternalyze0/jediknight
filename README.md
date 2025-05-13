@@ -93,7 +93,7 @@ We thank the authors of these references for their dedication as well as friends
 
 [2] Tim Pearce, Jun Zhu. Counter-Strike Deathmatch with Large-Scale Behavioural Cloning, In proc. of IEEE Conference on Games (CoG), Beijing, China, 2022.
 
-[3] Seungeun Rho. A3C. 2019.
+[3] Seungeun Rho. A3C. GitHub, 2019.
 
 [4] Volodymyr Mnih, Adria Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu. Asynchronous Methods for Deep Reinforcement Learning. arXiv, 2016.
 
