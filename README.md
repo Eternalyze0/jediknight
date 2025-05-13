@@ -47,6 +47,16 @@ The forward, action prediction, and state embedder models (referred to as Phi in
 
 Aside from this being to my knowledge the first application of curiosity to a realtime competitive 3D game, the other novelty comes from smoothing actions by rewarding negative action prediction error.
 
+## Results
+
+In 36 minutes the AI explores half (about 10 areas or "rooms") of a big free-for-all map. During this time it picks up the same health pack twice (after it regenerates in a minute) and the same shield pack twice. 
+
+It wins 3-1, 1-0, 20-11 against Cultist, Jedi Trainer (after starting at a disadvantage) and Desann (the final boss of the game), all set to max Jedi Master level.
+
+Actions appear smoother and less jittery when the novel reward structure is used.
+
+Human gaming professionals report the AI is more challenging and more interesting to play against than built-in bots.
+
 ## My Discord Musings on Future Directions
 
 alpha — Yesterday at 23:49
